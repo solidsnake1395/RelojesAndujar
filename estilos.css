@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+/* Estilos generales del cuerpo */
+body {
+  background-color: #fffbf2; 
+  background: linear-gradient(to right, #ffebcd, #ffe4b5);
+  color: #4a4a4a; 
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6; /* Espaciado entre líneas */
+  margin: 0; /* Sin márgenes en el cuerpo */
+  padding: 20px; /* Espaciado interno en el cuerpo */
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #d35400; 
+  color: #ecf0f1;
+  text-align: center; 
+  padding: 20px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave para el encabezado */
+  border-bottom: 4px solid #f39c12; /* Línea decorativa inferior */
+  transition: background-color 0.3s; /* Transición suave al cambiar el fondo */
+}
+
+header:hover {
+  background-color: #e67e22; /* Color de fondo al pasar el ratón */
+}
+
+header h1 {
+  font-family: "Montserrat", sans-serif; /* Fuente personalizada */
+  font-size: 3em; 
+  margin: 0; 
+  text-transform: uppercase;
+  letter-spacing: 1px; 
+  transition: color 0.3s; /* Transición suave para el color */
+}
+
+header h1:hover {
+  color: #f39c12; /* Color al pasar el ratón sobre el h1 */
+}
+
+header h3 {
+  font-family: "Roboto", sans-serif; /* Fuente personalizada */
+  font-size: 1.5em; 
+  margin: 10px 0; 
+  font-weight: 300; 
+  color: #ecf0f1; 
+  transition: transform 0.3s; /* Transición suave para el efecto */
+}
+
+header h3:hover {
+  transform: scale(1.05); /* Efecto de aumentar tamaño al pasar el ratón */
+}
+
+nav {
+  background-color: #d35400;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para la barra */
+}
+
+nav ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0; 
+}
+
+nav ul li {
+  display: inline; 
+  margin: 0 20px; 
+}
+
+nav ul li a , div a{
+  background-color: #f39c12; /* Color de fondo de los enlaces */
+  color: #fff; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: 700; /* Negrita */
+  font-family: "Montserrat", sans-serif; /* Fuente personalizada */
+  padding: 8px 12px; /* Espaciado alrededor del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+nav ul li a:hover {
+  background-color: #e67e22; /* Color de fondo al pasar el ratón */
+  transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}
+
+/* Estilos para los enlaces en el cuerpo */
+a {
+  color: #f39c12; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: 500; /* Peso de fuente medio */
+  transition: color 0.3s, text-decoration 0.3s; /* Transiciones suaves */
+}
+
+a:hover {
+  color: #d35400; /* Color más oscuro al pasar el ratón */
+  text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+.titulo {
+  text-align: center;
+  background-image: url("media/estampado.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 100px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+#logo_titulo {
+  border-radius: 50%;
+  margin: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+h1,
+h2 {
+  color: #daa520;
+}
+
+/* Estilos para los párrafos */
+p {
+  font-size: 1.25em; /* Tamaño de fuente más grande */
+  margin: 10px 0; /* Margen superior e inferior */
+  line-height: 1.5; /* Espaciado entre líneas en párrafos */
+  text-align: justify; /* Alinear texto justificado */
+  color: #333; /* Color oscuro para el texto */
+}
+
+/* Limitar el número de líneas de los párrafos */
+p::after {
+  content: ''; /* Asegurar que el pseudo-elemento esté vacío */
+  display: block; /* Bloque para ocupar espacio */
+  height: 1em; /* Altura para limitar la línea */
+  overflow: hidden; /* Ocultar el desbordamiento */
+  visibility: hidden; /* Hacerlo invisible */
+}
+
+.imagenesCuerpo {
+  width: 100%;
+  height: auto; /* Mantener proporción */
+  border-radius: 10px; /* Bordes redondeados más suaves */
+  border: #f39c12 5px solid; /* Borde con nuevo color */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.seccion_par,
+.seccion_impar {
+  border: 2px solid #ffd700; 
+  padding: 20px; /* Espaciado interno */
+  margin: 20px 0; /* Espaciado vertical */
+  background-color: #fffacd; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.seccion_par:hover,
+.seccion_impar:hover {
+  border-color: #f39c12; 
+  box-shadow: 5px 5px 10px rgb(240, 224, 6);
+}
+
+.seccion_impar {
+  text-align: left;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  font-size: 20px;
+  padding: 70px;
+}
+
+.seccion_par {
+  text-align: right;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #d35400; /* Color de fondo del pie */
+  color: #fff; /* Color del texto */
+  text-align: center; /* Centrado del texto */
+  padding: 10px; /* Espaciado interno */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Sombra para el pie */
+}
+
+table {
+  width: 100%;
+  border-spacing: 50px;
+}
+
+.redes-sociales {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el padding por defecto */
+  display: flex; /* Permite que los elementos de la lista estén en línea */
+  gap: 10px; /* Espacio entre los iconos */
+}
+
+.redes-sociales img {
+  width: 30px; 
+  height: 30px; 
+  transition: transform 0.3s ease; /* Efecto de zoom suave al pasar el mouse */
+}
+
+.redes-sociales a:hover img {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
